@@ -7,8 +7,8 @@ function getFullName(firstName, lastName) {
 }
 
 function makeHalfPrice(price) {
-    let num = parseFloat(price.split('£')[1] / 2);
-    return `£${num.toFixed(2).toString()}`
+    const num = parseFloat(price.split('£')[1] / 2);
+    return `£${num.toFixed(2).toString()}`;
 }
 
 function countBooks(books) {
@@ -16,11 +16,11 @@ function countBooks(books) {
 }
 
 function isInStock(book) {
-    return book.quantity > 0
+    return book.quantity > 0;
 }
 
 function getTotalOrderPrice(price, amount) {
-    let VAT = (price / 10) * 2;
+    const VAT = (price / 10) * 2;
     return (price + VAT) * amount;
 
 }
